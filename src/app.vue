@@ -28,6 +28,10 @@
         img{
             width: 70px;
             height: 70px;
+            border-radius: 50%;
+            display: block;
+            border: none;
+            animation: roleing 5s infinite linear;
         }
         .logo-text{
             width: 100%;
@@ -43,6 +47,14 @@
             color: #888888;
             text-align: center;
             line-height: 50px;
+        }
+    }
+    @keyframes roleing{
+        0%{
+            transform: rotate(0deg)
+        }
+        100%{
+            transform: rotate(360deg)  
         }
     }
 </style>
