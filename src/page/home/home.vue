@@ -16,6 +16,10 @@
         },
         methods: {
              redirectEvent() {
+                this.$store.commit({
+                    type: 'setInitMso',
+                    textContent: '欢迎使用mso-vue-cli, 这是通过 vuex 传过来的值'
+                })
                 this.$router.push({
                     path: '/page1-view'
                 })

@@ -1,11 +1,15 @@
 <template>
     <div class="page1-container">
-        欢迎使用mso-vue-cli
+        {{getInitMso}}
     </div>
 </template>
 <script>
 export default {
-    
+    computed: {
+        getInitMso() {
+            return this.$store.state.initMoudle.initMso.textContent
+        }
+    }
 }
 </script>
 
