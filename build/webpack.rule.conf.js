@@ -42,7 +42,8 @@ const rules = [
         use:[{
             loader: 'babel-loader',
             options: {
-                presets: ['@babel/preset-env']
+                presets: ['@babel/preset-env'],
+                plugins: ["@babel/plugin-syntax-dynamic-import"]
             }
         }]
         // 不检查node_modules下的js文件
