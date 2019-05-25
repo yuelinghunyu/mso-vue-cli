@@ -45,9 +45,9 @@ const rules = [
                 presets: ['@babel/preset-env'],
                 plugins: ["@babel/plugin-syntax-dynamic-import"]
             }
-        }]
+        }],
         // 不检查node_modules下的js文件
-		// exclude: "/node_modules/"
+		exclude: "/node_modules/"
     },
     {
         test:/\.(png|jpe?g|gif|svg)$/i,

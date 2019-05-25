@@ -51,10 +51,10 @@ const webpackConfigProd = {
 		//上线压缩 去除console等信息webpack4.x之后去除了webpack.optimize.UglifyJsPlugin
 		new uglifyJSPlugin({
 			uglifyOptions: {
+				warnings: false,
 				compress: {
-					warnings: false,
 					drop_debugger: false,
-					drop_console: true
+					drop_console: true,
 				}
 			}
 		})
