@@ -16,6 +16,7 @@ const rootPath =
 	require('./relate.conf').relate.envs === "test"
 	? require('./relate.conf').relate.rootPath.test
 	: require('./relate.conf').relate.rootPath.pro
+console.log('打包路径' + rootPath )
 // 生产webpack 打包配置
 const webpackConfigProd = {
     mode: 'production', // 通过 mode 声明生产环境
