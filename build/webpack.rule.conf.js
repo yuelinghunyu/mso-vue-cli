@@ -50,7 +50,7 @@ const rules = [
 		exclude: "/node_modules/"
     },
     {
-        test:/\.(png|jpe?g|gif|svg)$/i,
+        test:/\.(png|jpe?g|gif|svg|jfif)$/i,
         use:[{
             loader: "url-loader",
             options: {
