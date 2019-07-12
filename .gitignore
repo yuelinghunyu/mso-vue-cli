@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-/mso
 
 # local env files
 .env.local

@@ -1,11 +1,3 @@
-<template>
-    <div class="home-container">
-        <img :src="logo" alt="logo">
-        <p class="logo-text">jdj vue</p>
-        <p class="slogon-text">不念过去、不畏将来</p>
-        <p @click="redirectEvent">路由跳转</p>
-    </div>
-</template>
 <script>
     export default{
         name:'home-container',
@@ -24,6 +16,16 @@
                     path: '/page1-view'
                 })
             }
+        },
+        render() {
+            return(
+                 <div class="home-container">
+                    <img src={this.logo} alt={this.logo} />
+                    <p class="logo-text">jdj vue</p>
+                    <p class="slogon-text">不念过去、不畏将来</p>
+                    <p click={this.redirectEvent}>路由跳转</p>
+                </div>
+            )
         }
     }
 </script>
